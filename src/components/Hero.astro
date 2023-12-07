@@ -1,0 +1,23 @@
+<section class=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 col-span-full py-48 space-y-12 lg:space-y-24 px-4 mx-auto max-w-xl lg:py-1 lg:px-2">
+  <div class="col-span-full space-y-4 lg:space-y-8 leading-heading ">
+    <p class="subtext text-14 md:text-20 lg:text-24"> hey! my name is</p>
+    <h1 class="subtext text-32 md:text-56 lg:text-64 font-black font-sans uppercase"> Jordy Alejandro</h1>
+
+  </div>
+</section>
+
+<style>
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+
+    @layer utilities {
+    .subtext {
+      @apply font-handwriting uppercase tracking-wide ;
+    }
+    .tab.tab-active {
+      @apply text-white after:bg-white after:rounded-full;
+    }
+    }
+</style>
+

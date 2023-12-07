@@ -1,7 +1,23 @@
-<section class=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 col-span-full py-48 space-y-12 lg:space-y-24 px-4 mx-auto max-w-xl lg:py-1 lg:px-2">
-  <div class="col-span-full space-y-4 lg:space-y-8 leading-heading ">
-    <p class="subtext text-14 md:text-20 lg:text-24"> hey! my name is</p>
-    <h1 class="subtext text-32 md:text-56 lg:text-64 font-black font-sans uppercase"> Jordy Alejandro</h1>
+---
+import Button from "./Button.astro";
+---
+<section class=" grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 col-span-full py-10 space-y-12 lg:space-y-24 px-4 mx-auto max-w-xl lg:py-1 lg:px-2">
+  <div class="col-span-full space-y-3 lg:space-y-5 ">
+    <p class="subtext text-14 text-2xl font-black md:text-20 lg:text-24 text-center sm:text-left "> hey ! my name is</p>
+    <h1 class="md:text-56 text-xl lg:text-64 font-black font-sans uppercase text-center sm:text-left"> Jordy Alejandro</h1>
+    <p class="col-span-9 text-lg md:text-18 lg:text-20">Software Enginieer.
+    Here you'll find my side projects and other stuff
+    </p>
+
+
+     <ul class="relative p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-m">
+      <span class="w-full h-full bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#3d1a41] group-hover:from-[#53a9c8] group-hover:via-[#43d195] group-hover:to-[#51aec1] absolute"></span>
+      <span class="relative px-6 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+        <li><span class="subtext relative "> <Button text="say hey 👋" href="mailto:mujtmurt@gmail.com" target="_blank" /> </span></li>
+    </ul>
+
+</div>
+
 
   </div>
 </section>

@@ -1,40 +1,68 @@
 ---
 import Button from "./Button.astro";
+import SocialMedia from "./SocialMedia.astro";
 ---
-<section class=" grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 col-span-full py-10 space-y-12 lg:space-y-24 px-4 mx-auto max-w-xl lg:py-1 lg:px-2">
-  <div class="col-span-full space-y-3 lg:space-y-5 ">
-    <p class="subtext text-14 text-2xl font-black md:text-20 lg:text-24 text-center sm:text-left "> hey ! my name is</p>
-    <h1 class="md:text-56 text-xl lg:text-64 font-black font-sans uppercase text-center sm:text-left"> Jordy Alejandro</h1>
-    <p class="col-span-9 text-lg md:text-18 lg:text-20">Software Developer.
-    Here you'll find my side projects and other stuff
+
+<section
+  class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 col-span-full py-2 space-y-12 lg:space-y-24 px-4 mx-auto max-w-xl lg:py-1 lg:px-2"
+>
+  <div class="col-span-full space-y-3 lg:space-y-4">
+    <p
+      class="text-gray-200 subtext text-14 text-2xl font-black md:text-20 lg:text-24 text-center sm:text-left"
+    >
+      hey ! my name is
+    </p>
+    <h1
+      class="text-gray-300 md:text-56 text-xl lg:text-64 font-black font-sans uppercase text-center sm:text-left"
+    >
+      Jordy Alejandro
+    </h1>
+    <p
+      class="text-gray-300 col-span-9 text-lg md:text-18 lg:text-20 mt-6 leading-8"
+    >
+      Software Developer. Here you'll find my side projects and other stuff.
+      Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum
+      sint consectetur cupidatat.
     </p>
 
-    <div >
-     <ul class=" mt-7 sm:mt-0 flex flex-col relative p-0.5 items-center justify-center font-bold overflow-hidden group rounded-m">
-      <span class="  w-40 h-36  sm:w-40 bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#3d1a41] group-hover:from-[#53a9c8] group-hover:via-[#43d195] group-hover:to-[#51aec1] absolute"></span>
-      <span class=" relative px-3 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
-        <li><span class="subtext relative "> <Button text="Contact me 👋" href="mailto:jordymazac@gmail.com" target="_blank" /> </span></li>
-    </ul>
+    <div class="lg:py-2">
+      <ul
+        class="mt-7 sm:mt-0 flex flex-col relative p-0.5 items-center justify-center font-bold overflow-hidden group rounded-m"
+      >
+        <span
+          class="w-40 h-36 sm:w-40 bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#3d1a41] group-hover:from-[#53a9c8] group-hover:via-[#43d195] group-hover:to-[#51aec1] absolute"
+        ></span>
+        <span
+          class="relative px-4 py-3 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400"
+        >
+          <li>
+            <span class="subtext relative text-gray-100">
+              <Button
+                text="Contact me 👋"
+                href="mailto:jordymazac@gmail.com"
+                target="_blank"
+              /></span
+            >
+          </li>
+        </span>
+      </ul>
+
+      <SocialMedia />
     </div>
-
-</div>
-
-
   </div>
 </section>
 
 <style>
-   @tailwind base;
-   @tailwind components;
-   @tailwind utilities;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 
-    @layer utilities {
+  @layer utilities {
     .subtext {
-      @apply font-handwriting uppercase tracking-wide ;
+      @apply font-handwriting uppercase tracking-wide;
     }
     .tab.tab-active {
       @apply text-white after:bg-white after:rounded-full;
     }
-    }
+  }
 </style>
-

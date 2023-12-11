@@ -2,18 +2,76 @@
 import HeaderButton from "./HeaderButton.astro";
 ---
 
-<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6 ">
-  <div class="mx-auto text-center mb-8 lg:mb-16" >
-    <h2 class="mb-4 text-5xl font-extrabold uppercase text-transparent bg-gradient-to-r from-gray-200 via-gray-300 to-green-600 bg-clip-text">
+<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+  <div class="mx-auto text-center mb-8 lg:mb-16">
+    <h2
+      class="mb-4 text-5xl font-extrabold uppercase text-transparent bg-gradient-to-r from-gray-200 via-gray-300 to-green-600 bg-clip-text"
+    >
       about &lt;me/&gt;
     </h2>
   </div>
-  <HeaderButton/>
-  <section
-    id="about"
-    class="col-span-full global-grid py-48 md:py-96 lg:py-160 space-y-24"
-    > 
-    
+  <HeaderButton />
+  <section class="col-span-full global-grid py-4 md:py-96 lg:py-7 space-y-24">
+    <div
+      class="text-gray-300 col-span-full lg:text-base leading-7 mt-6 space-y-7 md:text-18 md:space-y-4 lg:text-20 xl:col-span-6"
+    >
+      <p>
+        I started out as a left brainer and enjoyed coding using <span
+          class="font-extrabold">Java</span
+        > and <span class="font-extrabold">MySQL</span> in the early days of
+        high school. Couple years later I developed an addiction for web design
+        and I&apos;m enthusiastic about making designs look and feel good
+        through front-end development.
+      </p>
+      <p>
+        I have a knack for working with <span class="font-extrabold"
+          >design systems</span
+        >. Be it designing them from scratch or engineering them with the power
+        of SCSS and Storybook.
+      </p>
+      <p>
+        I&apos;m a cheerful person with decent marketing skills. I fancy
+        teaching and learning anything website related (you should check out my
+        IG <a href="https://instagram.com/mujs.dev" target="_blank">@mujs.dev</a
+        >). In my spare time, I sleep, drink water, and hunt for trophies on my
+        PS5.
+      </p>
+      <p>A brief list of tech goodies I&apos;ve been using:</p>
+      <div
+        class="space-y-16 flex flex-col text-14 md:text-16 md:flex-row md:space-y-0 md:space-x-64 lg:text-18"
+      >
+        <div class="space-y-8 flex flex-col">
+          <div>
+            <span>👨‍🎨</span> Figma
+          </div>
+          <div>
+            <span>👨‍🎨</span> Adobe Xd
+          </div>
+          <div>
+            <span>👨‍🎨</span> Webflow
+          </div>
+          <div>
+            <span>👨‍🎨</span> Stripo
+          </div>
+        </div>
+        <div class="space-y-8 flex flex-col">
+          <div>
+            <span>💻</span> HTML, SCSS, JS
+          </div>
+          <div>
+            <span>💻</span> Vue, React, Next.js
+          </div>
+          <div>
+            <span>💻</span> Storybook
+          </div>
+          <div>
+            <span>💻</span> Handlebars
+          </div>
+          <div>
+            <span>💻</span> Ruby on rails (a tad)
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </header>
-
